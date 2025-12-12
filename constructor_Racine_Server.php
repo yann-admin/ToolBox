@@ -12,20 +12,22 @@
     - Views: Il contiendra toutes les vues (l'affichage des pages) avec un dossier par contrôleur.
     - Autoloader.php: Il permettra de charger automatiquement nos fichiers de classes.
     */
-    if (!is_dir('../Controllers')){mkdir('../Controllers');};
-    if (!is_dir('../Core')){mkdir('../Core');};
-    if (!is_dir('../Entities')){mkdir('../Entities');};
-    if (!is_dir('../Models')){mkdir('../Models');};
-    if (!is_dir('../public')){mkdir('../public');};
+    if (!is_dir('../app')){mkdir('../app');};
         # ├ Created subfolder
-        if (is_dir('../public') && !is_dir("../public/images")){mkdir('../public/images');};
-    if (!is_dir('../Views')){mkdir('../Views');};
+    if (!is_dir('../app/Controllers')){mkdir('../app/Controllers');};
+    if (!is_dir('../app/Core')){mkdir('../app/Core');};
+    if (!is_dir('../app/Entities')){mkdir('../app/Entities');};
+    if (!is_dir('../app/Models')){mkdir('../app/Models');};
+    if (!is_dir('../app/public')){mkdir('../app/public');};
         # ├ Created subfolder
-        if (is_dir('../Views') && !is_dir("../Views/home")){mkdir('../Views/home');};
-    if (!is_dir('../css')){mkdir('../css');};
-    if (!is_dir('../js')){mkdir('../js');};
-    if (!is_dir('../php')){mkdir('../php');};
-    if (!is_dir('../json')){mkdir('../json');};
-    if (!is_dir('../images')){mkdir('../images');};
-    if (!is_dir('../includes')){mkdir('../includes');};
+        if (is_dir('../app/public') && !is_dir("../app/public/images")){mkdir('../app/public/images');};
+    if (!is_dir('../app/Views')){mkdir('../app/Views');};
+        # ├ Created subfolder
+        if (is_dir('../app/Views') && !is_dir("../app/Views/home")){mkdir('../app/Views/home');};
+    if (!is_dir('../app/css')){mkdir('../app/css');};
+    if (!is_dir('../app/js')){mkdir('../app/js');};
+    if (!is_dir('../app/php')){mkdir('../app/php');};
+    if (!is_dir('../app/json')){mkdir('../app/json');};
+    if (!is_dir('../app/images')){mkdir('../app/images');};
+    if (!is_dir('../app/includes')){mkdir('../app/includes');};
 ?>

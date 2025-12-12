@@ -16,6 +16,9 @@
             // require "constructor_Controller.php";
             // require "constructor_Form.php";
         /* ================================ */
+        
+            $dotenv = Dotenv::createImmutable(__DIR__);
+            $dotenv->load(); 
 
         /* ▂ ▅ ▆ █ Variable █ ▆ ▅ ▂ */
             /************************************* A MODIFIER ************************************************* */
@@ -38,9 +41,8 @@
                     $fileName = "Représentation_structure_Table_DataBase.php";    # Nom du fichier pour la représentation graphique de la structure des tables de la base de donnée.
                     $fileGraphTable = $path.$fileName;             # Chemin complet du fichier de réprésentation graphique de la structure des tables de la base de donnée.
                 #********************
+
             # Constante de connexion à la base de donnée      
-            $dotenv = Dotenv::createImmutable(__DIR__);
-            $dotenv->load();             
              $SERVER = $_ENV['SERVER'];
              $PORT = $_ENV['PORT'];
              $BASE = $_ENV['BASE'];
@@ -49,3 +51,8 @@
             # on créer la connection à la bade de donnée.
             $oConnexion = new PDO("mysql:host=". $SERVER . ":" . $PORT .";dbname=" . $BASE, $USER, $PASSWORD);
             $connexion = $oConnexion;
+                $headerText="";
+                $saveText ="";
+                $version = "2";                                 # Variable pour les commentaires
+                $correctif = "\t\t\t"."#Version 2: Reprise complète du soft \n";
+            /*************************************************************************************************** */
